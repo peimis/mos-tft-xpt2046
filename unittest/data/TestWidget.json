@@ -1,0 +1,10 @@
+{
+  "name": "one",
+  "x": 16,
+  "y": 16,
+  "w": 48,
+  "h": 48,
+  "label": "One",
+  "type": 0
+  "img": "/some/file.ext"
+}

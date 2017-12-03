@@ -1,0 +1,52 @@
+{
+  "name": "Main",
+  "widgets": [
+    {
+      "name": "one",
+      "x": 16,
+      "y": 36,
+      "w": 64,
+      "h": 56,
+      "label": "One",
+      "type": 2,
+      "screen": "/screen_one.json"
+    },
+    {
+      "name": "two",
+      "x": 240,
+      "y": 36,
+      "w": 64,
+      "h": 56,
+      "label": "Two",
+      "type": 2,
+      "screen": "/screen_two.json"
+    },
+    {
+      "name": "three",
+      "x": 128,
+      "y": 36,
+      "w": 64,
+      "h": 64,
+      "label": "Three",
+      "type": 0
+    },
+    {
+      "name": "logo",
+      "x": 32,
+      "y": 110,
+      "w": 128,
+      "h": 98,
+      "type": 0,
+      "img": "/mongoose-os.dif"
+    },
+    {
+      "name": "flowers",
+      "x": 182,
+      "y": 110,
+      "w": 106,
+      "h": 98,
+      "type": 0,
+      "img": "/flowers.dif"
+    }
+  ]
+}
