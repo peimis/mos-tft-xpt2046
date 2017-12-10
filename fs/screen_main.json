@@ -32,7 +32,7 @@
     },
     {
       "name": "logo",
-      "x": 32,
+      "x": 10,
       "y": 110,
       "w": 128,
       "h": 98,
@@ -40,13 +40,13 @@
       "img": "/mongoose-os.dif"
     },
     {
-      "name": "flowers",
-      "x": 182,
+      "name": "chimps",
+      "x": 170,
       "y": 110,
-      "w": 106,
-      "h": 98,
+      "w": 160,
+      "h": 106,
       "type": 0,
-      "img": "/flowers.dif"
+      "img": "/test2-160x106.jpg"
     }
   ]
 }

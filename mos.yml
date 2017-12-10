@@ -55,6 +55,8 @@ conds:
         - ["spi.cs1_gpio", 33] # STMPE610
         - ["spi.cs2_gpio", 27] # XPT2046
         - ["ili9341.dc_pin", 26]
+        - ["ili9341.rst_pin", "i", {title: "TFT reset pin"}]
+        - ["ili9341.rst_pin", 25]
         - ["xpt2046.irq_pin", 13]
  #       - ["stmpe610.irq_pin", 23]
         - ["app.backlight_pin", 21]
@@ -89,6 +91,9 @@ libs:
   - origin: https://github.com/mongoose-os-libs/ili9341-spi
 #  - origin: https://github.com/mongoose-os-libs/stmpe610-spi
   - origin: https://github.com/peimis/xpt2046
+#  - origin: libs/xpt2046
+  - origin: https://github.com/peimis/tjpgdec
+#  - origin: libs/tjpgdec
 
 # Used by the mos tool to catch mos binaries incompatible with this file format
 manifest_version: 2017-05-18

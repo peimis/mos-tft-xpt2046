@@ -1,5 +1,6 @@
 #include "mgos.h"
 #include "mongoose-touch.h"
+#include "mgos_tjpgdec.h"
 
 extern GFXfont FreeSerifBold9pt7b;
 extern struct screen_t *s_screen;
@@ -21,7 +22,11 @@ static void widget_default_draw(struct widget_t *w, uint16_t color) {
  
   if (w->img) {
     mgos_ili9341_set_fgcolor565(ILI9341_BLUE);
-    mgos_ili9341_drawDIF(0, 0, w->img);
+    if (!strcmp(".jpg", &w->img[ strlen(w->img)-4 ])) {
+      mgos_jpg_image(w->img, true, 0, 0, SCALE_FACTOR_1, ili9341_send_pixels);
+    } else {
+      mgos_ili9341_drawDIF(0, 0, w->img);
+    }
   } else if (w->label) {
     int16_t text_width, text_height;
     uint16_t x, y;
